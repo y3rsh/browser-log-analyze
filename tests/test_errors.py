@@ -13,25 +13,17 @@ class TestGuineaPig(object):
         """
         path = f"file:{os.getcwd()}/test_data/network404.html"
         driver.get(path)
-        time.sleep(1)
-        perf = driver.get_log('performance')
         browser = driver.get_log('browser')
         d = driver.get_log('driver')
-        logger = {'timestamp': time.time(),
-                  'url': driver.current_url}
-        #for log in perf:
-        #    print(log)
-#
-        #print('___________________________')
+        logger = [{'timestamp': int(round(time.time() * 1000)),
+                  'url': driver.current_url}]
 
         for log in browser:
-            print(log)
+            if log['level'] == 'SEVERE':
+                print(log)
+                for page in logger:
+                  print(log['timestamp'] - page['timestamp'])
 
-        #print('___________________________')
-#
-        #for log in d:
-        #    print(log)
-        print(logger)
 
 
         #https://httpbin.org/
