@@ -4,20 +4,25 @@
 
 ```bash
 brew install chromedriver
+brew install pipenv
 ```
 
-```bash
-python3 -m venv env
-```
+###  https://docs.pipenv.org/
+
+### Install from the Pipfile
 
 ```bash
-source env/bin/activate
+pipenv install
 ```
 
-```bash
-pip install -r requirements.txt
-```
+### Enter the created venv
 
 ```bash
-deactivate
+pipenv shell
+```
+
+### Exit the venv
+
+```bash
+exit
 ```

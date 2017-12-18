@@ -1,5 +1,0 @@
-pytest
-PyYAML
-selenium
-pytest-xdist
-requests
