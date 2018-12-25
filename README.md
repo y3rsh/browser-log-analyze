@@ -26,3 +26,8 @@ pipenv shell
 ```bash
 exit
 ```
+
+
+SEVERE log
+WARNING log
+Ignore list

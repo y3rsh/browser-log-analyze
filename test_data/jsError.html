@@ -1,0 +1,23 @@
+<HTML>
+
+<HEAD>
+  <TITLE>Test Things</TITLE>
+</HEAD>
+<H1>
+  This is to test a js error in console.
+</H1>
+<BODY>
+  <CENTER>
+    <label id='not_demo'></label>
+  </CENTER>
+</BODY>
+
+<script>
+  try {
+      notreal("Welcome guest!");
+  }
+  catch(err) {
+      document.getElementById("demo").innerHTML = err.message;
+  }
+  </script>
+</HTML>
