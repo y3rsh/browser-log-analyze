@@ -2,8 +2,9 @@
 
 ## Getting Started
 
-```bash
+```sh
 brew install chromedriver
+brew install pyenv
 brew install pipenv
 ```
 
@@ -11,19 +12,19 @@ brew install pipenv
 
 ### Install from the Pipfile
 
-```bash
+```sh
 pipenv install
 ```
 
 ### Enter the created venv
 
-```bash
+```sh
 pipenv shell
 ```
 
 ### Exit the venv
 
-```bash
+```sh
 exit
 ```
 

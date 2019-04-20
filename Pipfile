@@ -1,15 +1,19 @@
 [[source]]
-url = "https://pypi.python.org/simple"
-verify_ssl = true
 name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
 
 [packages]
 pytest = "*"
 pyyaml = "*"
-selenium = "*"
 pytest-xdist = "*"
 requests = "*"
 pytest-selenium = "*"
-attr = "*"
+attrs = "*"
+easydict = "*"
+pytest-html = "*"
 
-[dev-packages]
+[requires]
+python_version = "3.7"

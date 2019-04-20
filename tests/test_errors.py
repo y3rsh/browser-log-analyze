@@ -5,19 +5,19 @@ import time
 
 class TestGuineaPig():
 
-    def test_404(self, selenium):
+    def test_404(self, driver):
         """
         validate that 404 errors are caught in logs
         :return: None
         """
         path = f"file:{os.getcwd()}/test_data/network404.html"
-        selenium.get(path)
-        browser = selenium.get_log('browser')
-        d = selenium.get_log('driver')
+        driver.get(path)
+        browser = driver.get_log('browser')
+        d = driver.get_log('driver')
         logger = [
             {
                 'timestamp': int(round(time.time() * 1000)),
-                'url': selenium.current_url,
+                'url': driver.current_url,
             }
         ]
         for log in browser:
