@@ -109,3 +109,5 @@ results/
 
 #pytest
 .pytest_cache
+
+results/

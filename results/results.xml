@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skips="0" tests="1" time="2.664"><testcase classname="tests.test_errors.TestGuineaPig" file="tests/test_errors.py" line="7" name="test_404" time="2.6295011043548584"></testcase></testsuite>
